@@ -19,8 +19,9 @@ class CTSecondaryTitleLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    convenience init(fontSize: CGFloat) {
+    convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
         self.init(frame: .zero)
+        self.textAlignment = textAlignment
         font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
     }
     
