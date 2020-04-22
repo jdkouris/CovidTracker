@@ -12,6 +12,8 @@
 		CC33570F2450998C009718B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC33570E2450998C009718B5 /* Assets.xcassets */; };
 		CC3357122450998C009718B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3357102450998C009718B5 /* LaunchScreen.storyboard */; };
 		CC33571D24509D82009718B5 /* CTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33571C24509D82009718B5 /* CTTabBarController.swift */; };
+		CC33572024509E3B009718B5 /* SnapshotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33571F24509E3B009718B5 /* SnapshotVC.swift */; };
+		CC33572224509E4B009718B5 /* StatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33572124509E4B009718B5 /* StatesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CC3357112450998C009718B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC3357132450998C009718B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC33571C24509D82009718B5 /* CTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTTabBarController.swift; sourceTree = "<group>"; };
+		CC33571F24509E3B009718B5 /* SnapshotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotVC.swift; sourceTree = "<group>"; };
+		CC33572124509E4B009718B5 /* StatesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CC33571924509CE2009718B5 /* Custom Views */,
+				CC33571E24509DC0009718B5 /* Screens */,
 				CC33571B24509D05009718B5 /* Support */,
 				CC3357132450998C009718B5 /* Info.plist */,
 			);
@@ -86,6 +91,15 @@
 				CC3357102450998C009718B5 /* LaunchScreen.storyboard */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		CC33571E24509DC0009718B5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CC33571F24509E3B009718B5 /* SnapshotVC.swift */,
+				CC33572124509E4B009718B5 /* StatesVC.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC33572024509E3B009718B5 /* SnapshotVC.swift in Sources */,
+				CC33572224509E4B009718B5 /* StatesVC.swift in Sources */,
 				CC33571D24509D82009718B5 /* CTTabBarController.swift in Sources */,
 				CC33570624509988009718B5 /* AppDelegate.swift in Sources */,
 				CC33570824509988009718B5 /* SceneDelegate.swift in Sources */,
