@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct State: Codable {
+    let state: String
+    let positive: Int
+    let totalTestResults: Int
+    let dateModified: Date
+}

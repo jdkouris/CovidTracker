@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class NetworkManager {
+    static let shared = NetworkManager()
+    private let baseURL = "https://covidtracking.com/api/states"
+    
+    func getStates() {
+        
+    }
+}
