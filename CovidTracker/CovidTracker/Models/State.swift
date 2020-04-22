@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct State: Codable {
+struct State: Codable, Hashable {
     let state: String
     let positive: Int
     let totalTestResults: Int
