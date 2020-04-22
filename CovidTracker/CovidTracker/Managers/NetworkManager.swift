@@ -39,7 +39,8 @@ class NetworkManager {
             do {
                 let decoder = JSONDecoder()
                 let states = try decoder.decode([State].self, from: data)
-                completed(.success(states))
+                let filteredStates = states.filter { $0.state != "PR" && $0.state != "AS" && $0.state != "GU" && $0.state != "MP" && $0.state != "VI"}
+                completed(.success(filteredStates))
             } catch {
                 completed(.failure(.invalidData))
             }

@@ -24,11 +24,12 @@ class StateCell: UICollectionViewCell {
     
     func set(state: State) {
         stateNameLabel.text = state.state
-        stateIconView.image = UIImage(named: "california")
+        stateIconView.image = UIImage(named: state.state)
     }
     
     private func configure() {
         addSubviews(stateIconView, stateNameLabel)
+        stateIconView.translatesAutoresizingMaskIntoConstraints = false
         
         let padding: CGFloat = 8
         

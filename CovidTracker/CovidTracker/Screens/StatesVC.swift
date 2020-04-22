@@ -14,6 +14,8 @@ class StatesVC: UIViewController {
         case main
     }
     
+    var states: [State] = []
+    
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, State>!
 
@@ -22,6 +24,8 @@ class StatesVC: UIViewController {
 
         configureViewController()
         configureCollectionView()
+        configureDataSource()
+        getStateData()
     }
     
     func configureViewController() {
@@ -35,6 +39,42 @@ class StatesVC: UIViewController {
         collectionView.delegate = self
         collectionView.backgroundColor = .systemBackground
         collectionView.register(StateCell.self, forCellWithReuseIdentifier: StateCell.reuseID)
+    }
+    
+    func configureDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, State>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, state) -> UICollectionViewCell? in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StateCell.reuseID, for: indexPath) as! StateCell
+            cell.set(state: state)
+            return cell
+        })
+    }
+    
+    func getStateData() {
+        NetworkManager.shared.getStateResults { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let states):
+                self.states.append(contentsOf: states)
+                self.updateData(on: self.states)
+                
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Oops", message: error.rawValue, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default))
+                    self.present(alert, animated: true)
+                }
+            }
+        }
+    }
+    
+    func updateData(on states: [State]) {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, State>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(states)
+        DispatchQueue.main.async {
+            self.dataSource.apply(snapshot, animatingDifferences: true, completion: nil)
+        }
     }
 
 }
