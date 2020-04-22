@@ -81,6 +81,12 @@ class StatesVC: UIViewController {
 
 extension StatesVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let state = states[indexPath.item]
         
+        let destinationVC = StateDetailVC()
+        destinationVC.state = state
+        
+        let navController = UINavigationController(rootViewController: destinationVC)
+        present(navController, animated: true, completion: nil)
     }
 }
