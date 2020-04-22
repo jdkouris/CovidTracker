@@ -19,7 +19,7 @@ class CTTabBarController: UITabBarController {
     func createSnapshotNC() -> UINavigationController {
         let snapshotVC = SnapshotVC()
         snapshotVC.title = "Snapshot"
-        snapshotVC.tabBarItem = UITabBarItem(title: "Snapshot", image: nil, tag: 0)
+        snapshotVC.tabBarItem = UITabBarItem(title: "Snapshot", image: UIImage(named: "world-map-dark"), tag: 0)
         
         return UINavigationController(rootViewController: snapshotVC)
     }
@@ -27,7 +27,7 @@ class CTTabBarController: UITabBarController {
     func createStatesNC() -> UINavigationController {
         let statesVC = StatesVC()
         statesVC.title = "States"
-        statesVC.tabBarItem = UITabBarItem(title: "States", image: nil, tag: 1)
+        statesVC.tabBarItem = UITabBarItem(title: "States", image: UIImage(named: "usa"), tag: 1)
         
         return UINavigationController(rootViewController: statesVC)
     }
