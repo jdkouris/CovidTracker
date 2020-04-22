@@ -12,6 +12,6 @@ struct State: Codable, Hashable {
     let state: String
     let positive: Int
     let totalTestResults: Int
-    let dateModified: Date
-    let death: Int
+    let dateModified: String
+    let death: Int?
 }
