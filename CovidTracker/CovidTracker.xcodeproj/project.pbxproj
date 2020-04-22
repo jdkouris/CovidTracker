@@ -21,6 +21,7 @@
 		CC3357302450B534009718B5 /* StateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33572F2450B534009718B5 /* StateCell.swift */; };
 		CC3357332450B709009718B5 /* CTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357322450B709009718B5 /* CTTitleLabel.swift */; };
 		CC3357362450B897009718B5 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357352450B897009718B5 /* UIView+Ext.swift */; };
+		CC3357382450D539009718B5 /* StateDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357372450D539009718B5 /* StateDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CC33572F2450B534009718B5 /* StateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCell.swift; sourceTree = "<group>"; };
 		CC3357322450B709009718B5 /* CTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTTitleLabel.swift; sourceTree = "<group>"; };
 		CC3357352450B897009718B5 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		CC3357372450D539009718B5 /* StateDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				CC33571F24509E3B009718B5 /* SnapshotVC.swift */,
 				CC33572124509E4B009718B5 /* StatesVC.swift */,
+				CC3357372450D539009718B5 /* StateDetailVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				CC3357252450A6E2009718B5 /* NetworkManager.swift in Sources */,
 				CC33572B2450AE49009718B5 /* CTError.swift in Sources */,
+				CC3357382450D539009718B5 /* StateDetailVC.swift in Sources */,
 				CC33572024509E3B009718B5 /* SnapshotVC.swift in Sources */,
 				CC33572224509E4B009718B5 /* StatesVC.swift in Sources */,
 				CC33571D24509D82009718B5 /* CTTabBarController.swift in Sources */,
