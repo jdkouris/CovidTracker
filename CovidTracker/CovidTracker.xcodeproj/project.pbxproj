@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CC33570624509988009718B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33570524509988009718B5 /* AppDelegate.swift */; };
 		CC33570824509988009718B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33570724509988009718B5 /* SceneDelegate.swift */; };
-		CC33570A24509988009718B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33570924509988009718B5 /* ViewController.swift */; };
 		CC33570F2450998C009718B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC33570E2450998C009718B5 /* Assets.xcassets */; };
 		CC3357122450998C009718B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3357102450998C009718B5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		CC33570224509988009718B5 /* CovidTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC33570524509988009718B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC33570724509988009718B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC33570924509988009718B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC33570E2450998C009718B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC3357112450998C009718B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC3357132450998C009718B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,14 +52,37 @@
 		CC33570424509988009718B5 /* CovidTracker */ = {
 			isa = PBXGroup;
 			children = (
-				CC33570524509988009718B5 /* AppDelegate.swift */,
-				CC33570724509988009718B5 /* SceneDelegate.swift */,
-				CC33570924509988009718B5 /* ViewController.swift */,
-				CC33570E2450998C009718B5 /* Assets.xcassets */,
-				CC3357102450998C009718B5 /* LaunchScreen.storyboard */,
+				CC33571924509CE2009718B5 /* Custom Views */,
+				CC33571B24509D05009718B5 /* Support */,
 				CC3357132450998C009718B5 /* Info.plist */,
 			);
 			path = CovidTracker;
+			sourceTree = "<group>";
+		};
+		CC33571924509CE2009718B5 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC33571A24509CF0009718B5 /* TabBarControllers */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		CC33571A24509CF0009718B5 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		CC33571B24509D05009718B5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CC33570524509988009718B5 /* AppDelegate.swift */,
+				CC33570724509988009718B5 /* SceneDelegate.swift */,
+				CC33570E2450998C009718B5 /* Assets.xcassets */,
+				CC3357102450998C009718B5 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC33570A24509988009718B5 /* ViewController.swift in Sources */,
 				CC33570624509988009718B5 /* AppDelegate.swift in Sources */,
 				CC33570824509988009718B5 /* SceneDelegate.swift in Sources */,
 			);
