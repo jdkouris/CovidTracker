@@ -13,4 +13,5 @@ struct State: Codable, Hashable {
     let positive: Int
     let totalTestResults: Int
     let dateModified: Date
+    let death: Int
 }
