@@ -13,7 +13,23 @@ class CTTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewControllers = [createSnapshotNC(), createStatesNC()]
+    }
+    
+    func createSnapshotNC() -> UINavigationController {
+        let snapshotVC = SnapshotVC()
+        snapshotVC.title = "Snapshot"
+        snapshotVC.tabBarItem = UITabBarItem(title: "Snapshot", image: nil, tag: 0)
         
+        return UINavigationController(rootViewController: snapshotVC)
+    }
+    
+    func createStatesNC() -> UINavigationController {
+        let statesVC = StatesVC()
+        statesVC.title = "States"
+        statesVC.tabBarItem = UITabBarItem(title: "States", image: nil, tag: 1)
+        
+        return UINavigationController(rootViewController: statesVC)
     }
 
 }
