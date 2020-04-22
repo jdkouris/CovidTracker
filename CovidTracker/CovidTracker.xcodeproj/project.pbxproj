@@ -19,6 +19,7 @@
 		CC33572B2450AE49009718B5 /* CTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33572A2450AE49009718B5 /* CTError.swift */; };
 		CC33572D2450B2CB009718B5 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33572C2450B2CB009718B5 /* UIHelper.swift */; };
 		CC3357302450B534009718B5 /* StateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33572F2450B534009718B5 /* StateCell.swift */; };
+		CC3357332450B709009718B5 /* CTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357322450B709009718B5 /* CTTitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CC33572A2450AE49009718B5 /* CTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTError.swift; sourceTree = "<group>"; };
 		CC33572C2450B2CB009718B5 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		CC33572F2450B534009718B5 /* StateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCell.swift; sourceTree = "<group>"; };
+		CC3357322450B709009718B5 /* CTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTTitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				CC33571A24509CF0009718B5 /* TabBarControllers */,
+				CC3357312450B6EC009718B5 /* Labels */,
 				CC33572E2450B456009718B5 /* Cells */,
 			);
 			path = "Custom Views";
@@ -147,6 +150,14 @@
 				CC33572F2450B534009718B5 /* StateCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CC3357312450B6EC009718B5 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				CC3357322450B709009718B5 /* CTTitleLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				CC3357302450B534009718B5 /* StateCell.swift in Sources */,
 				CC33572D2450B2CB009718B5 /* UIHelper.swift in Sources */,
 				CC33570624509988009718B5 /* AppDelegate.swift in Sources */,
+				CC3357332450B709009718B5 /* CTTitleLabel.swift in Sources */,
 				CC3357282450AB46009718B5 /* State.swift in Sources */,
 				CC33570824509988009718B5 /* SceneDelegate.swift in Sources */,
 			);
