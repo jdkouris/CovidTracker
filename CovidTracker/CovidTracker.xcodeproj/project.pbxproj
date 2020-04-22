@@ -22,6 +22,7 @@
 		CC3357332450B709009718B5 /* CTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357322450B709009718B5 /* CTTitleLabel.swift */; };
 		CC3357362450B897009718B5 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357352450B897009718B5 /* UIView+Ext.swift */; };
 		CC3357382450D539009718B5 /* StateDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357372450D539009718B5 /* StateDetailVC.swift */; };
+		CC33573A2450D9D0009718B5 /* CTSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357392450D9D0009718B5 /* CTSecondaryTitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CC3357322450B709009718B5 /* CTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTTitleLabel.swift; sourceTree = "<group>"; };
 		CC3357352450B897009718B5 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		CC3357372450D539009718B5 /* StateDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailVC.swift; sourceTree = "<group>"; };
+		CC3357392450D9D0009718B5 /* CTSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				CC3357322450B709009718B5 /* CTTitleLabel.swift */,
+				CC3357392450D9D0009718B5 /* CTSecondaryTitleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				CC3357302450B534009718B5 /* StateCell.swift in Sources */,
 				CC33572D2450B2CB009718B5 /* UIHelper.swift in Sources */,
 				CC33570624509988009718B5 /* AppDelegate.swift in Sources */,
+				CC33573A2450D9D0009718B5 /* CTSecondaryTitleLabel.swift in Sources */,
 				CC3357362450B897009718B5 /* UIView+Ext.swift in Sources */,
 				CC3357332450B709009718B5 /* CTTitleLabel.swift in Sources */,
 				CC3357282450AB46009718B5 /* State.swift in Sources */,
