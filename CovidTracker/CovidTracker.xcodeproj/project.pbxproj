@@ -15,6 +15,7 @@
 		CC33572024509E3B009718B5 /* SnapshotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33571F24509E3B009718B5 /* SnapshotVC.swift */; };
 		CC33572224509E4B009718B5 /* StatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33572124509E4B009718B5 /* StatesVC.swift */; };
 		CC3357252450A6E2009718B5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357242450A6E1009718B5 /* NetworkManager.swift */; };
+		CC3357282450AB46009718B5 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357272450AB46009718B5 /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CC33571F24509E3B009718B5 /* SnapshotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotVC.swift; sourceTree = "<group>"; };
 		CC33572124509E4B009718B5 /* StatesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesVC.swift; sourceTree = "<group>"; };
 		CC3357242450A6E1009718B5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CC3357272450AB46009718B5 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				CC3357232450A6BE009718B5 /* Managers */,
+				CC3357262450AB31009718B5 /* Models */,
 				CC33571924509CE2009718B5 /* Custom Views */,
 				CC33571E24509DC0009718B5 /* Screens */,
 				CC33571B24509D05009718B5 /* Support */,
@@ -111,6 +114,14 @@
 				CC3357242450A6E1009718B5 /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		CC3357262450AB31009718B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC3357272450AB46009718B5 /* State.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				CC33572224509E4B009718B5 /* StatesVC.swift in Sources */,
 				CC33571D24509D82009718B5 /* CTTabBarController.swift in Sources */,
 				CC33570624509988009718B5 /* AppDelegate.swift in Sources */,
+				CC3357282450AB46009718B5 /* State.swift in Sources */,
 				CC33570824509988009718B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
