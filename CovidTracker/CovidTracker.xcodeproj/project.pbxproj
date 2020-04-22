@@ -14,6 +14,7 @@
 		CC33571D24509D82009718B5 /* CTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33571C24509D82009718B5 /* CTTabBarController.swift */; };
 		CC33572024509E3B009718B5 /* SnapshotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33571F24509E3B009718B5 /* SnapshotVC.swift */; };
 		CC33572224509E4B009718B5 /* StatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33572124509E4B009718B5 /* StatesVC.swift */; };
+		CC3357252450A6E2009718B5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3357242450A6E1009718B5 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CC33571C24509D82009718B5 /* CTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTTabBarController.swift; sourceTree = "<group>"; };
 		CC33571F24509E3B009718B5 /* SnapshotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotVC.swift; sourceTree = "<group>"; };
 		CC33572124509E4B009718B5 /* StatesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesVC.swift; sourceTree = "<group>"; };
+		CC3357242450A6E1009718B5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		CC33570424509988009718B5 /* CovidTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CC3357232450A6BE009718B5 /* Managers */,
 				CC33571924509CE2009718B5 /* Custom Views */,
 				CC33571E24509DC0009718B5 /* Screens */,
 				CC33571B24509D05009718B5 /* Support */,
@@ -100,6 +103,14 @@
 				CC33572124509E4B009718B5 /* StatesVC.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		CC3357232450A6BE009718B5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CC3357242450A6E1009718B5 /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3357252450A6E2009718B5 /* NetworkManager.swift in Sources */,
 				CC33572024509E3B009718B5 /* SnapshotVC.swift in Sources */,
 				CC33572224509E4B009718B5 /* StatesVC.swift in Sources */,
 				CC33571D24509D82009718B5 /* CTTabBarController.swift in Sources */,
